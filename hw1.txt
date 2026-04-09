@@ -1,1 +1,37 @@
+  1 GitHub Repository
+   https://github.com/Jai07-Dot/.dotfiles
+
+Commands I Used:
+git config --global user.name "Jaira Settles"
+git config --global user.email "your_email"
+mkdir -p ~/.ssh
+nano ~/.ssh/config
+ssh-keygen -t ed25519 -a 203 -f ./id_ed25519
+cat id_ed25519.pub
+mkdir .dotfiles
+cd .dotfiles
+nano README.md
+nano .nanorc
+git init
+git add --all
+git commit -m "INIT commit"
+git branch -M main
+git remote add origin git@github.com:Jai07-Dot/.dotfiles
+git push -u origin main
+Summary:
+
+In this assignment, I learned how to create and use a GitHub repository along with using Git on the command line. I created a GitHub account and then created a repository named .dotfiles. This repository is used to store configuration files such as .nanorc and README.md.
+
+I also learned how to configure Git using global settings such as my username and email. In addition, I set up SSH authentication by generating a key pair and adding the public key to my GitHub account. One challenge I faced was setting up SSH keys correctly, I made small mistakes such as incorrect file paths and typos, which caused authentication errors.Another issue I encountered was not seeing my .nanorc file when listing directory contents. I learned that files starting with a dot are hidden in Linux, and I needed to use the “ls -a” command to view them. Fixing these issues helped me understand how SSH connects my local machine to GitHub. This allowed me to securely connect my Linux environment to GitHub without using a password.
+
+After setting up Git and SSH, I created files locally in my .dotfiles directory, including a README.md file and a .nanorc configuration file. Then initialized a Git repository, added the files, committed the changes, and pushed them to GitHub.
+
+Overall, this assignment helped me understand how version control works and how GitHub can be used to store and manage files. I also learned how to troubleshoot issues such as merge conflicts and repository connection problems.
+
+Sources:
+https://education.github.com/git-cheat-sheet-education.pdf
+https://github.com/peyton-chandarana/.dotfiles
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet
+  
 
